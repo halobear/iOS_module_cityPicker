@@ -179,9 +179,9 @@
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component
 {
     switch (component) {
-        case 0: return UIScreen.main.bounds.width/3;
-        case 1: return UIScreen.main.bounds.width/3;
-        case 2: return UIScreen.main.bounds.width/3;
+        case 0: return UIScreen.mainScreen.bounds.width/3;
+        case 1: return UIScreen.mainScreen.bounds.width/3;
+        case 2: return UIScreen.mainScreen.bounds.width/3;
             
         default:break;
     }
