@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/halobear/iOS_module_cityPicker.git", :tag => "#{s.version}" }
   s.requires_arc = true
   s.source_files = "HBCityPicker/*.{h,m}"
-  s.resources =  "HBCityPicker/HaloShop.db"
+  s.resources =  "HBCityPicker/HBCityPicker.bundle"
   s.dependency "ActionSheetPicker-3.0", '~> 2.2.0'
   s.dependency "FMDB"
 end
