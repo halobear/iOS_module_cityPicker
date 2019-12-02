@@ -11,4 +11,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = "HBCityPicker/*.{h,m}"
   s.resources =  "HBCityPicker/HaloShop.db"
+  s.dependency "ActionSheetPicker-3.0", '~> 2.2.0'
 end
