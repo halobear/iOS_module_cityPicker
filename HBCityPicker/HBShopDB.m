@@ -48,9 +48,13 @@
 #pragma make - 懒加载
 - (NSString *)documentDirectory{
     if (!_documentDirectory) {
-
-        NSString *filename = @"HaloShop.db";
-        _documentDirectory = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:filename];
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSURL *url = [bundle URLForResource:@"HBCityPicker" withExtension:@"bundle"];
+        NSBundle *imageBundle = [NSBundle bundleWithURL:url];
+        
+        NSString *path = [imageBundle pathForResource:@"HaloShop" ofType:@"db"];
+        
+        _documentDirectory = path;
 
     }
     return _documentDirectory;
