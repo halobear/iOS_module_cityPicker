@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ActionSheetPicker.h"
+#import <ActionSheetPicker_3_0/ActionSheetPicker.h>
 #import "CityModel.h"
 
 @interface CityPickerDelegate : NSObject<ActionSheetCustomPickerDelegate>
